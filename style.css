@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+div#Piano{
+    
+    flex-direction: row;
+    background-color: aqua;
+    width: 650px;
+    height: 300px;
+    box-shadow: 1px 1px 1px black;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px 
+
+}
+
+div.tb{
+    background-color: white;
+    border: 2px solid black;
+    width: 50px;
+    height: 200px;
+    display: inline-block;
+    
+
+
+}
+div.tp{
+    background-color: black;
+    border: 2px solid black;
+    width: 25px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    
+    
+    
+}
