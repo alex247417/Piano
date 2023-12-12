@@ -11,23 +11,63 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: #121212;
     width: 1000px;
     height: 400px;
     box-shadow: 1px 1px 1px black;
     border: 2px solid black;
-    border-radius: 10px 10px 0px 0px;
-    margin: 100px auto;
+    border-radius: 20px;
+    margin: 100px auto 0;
     flex-direction: column;
     
+}
+
+.Controls{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.controls h1{
+    font-weight: 500px;
+    font-size: 1.4rem;
+}
+
+.switcher{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    background-color: #555;
+    border-radius: 50px;
+    padding: 4px;
+    
+}
+
+.switcher_button{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: #ddd;
+    border-radius: 25px;
+}
+
+.switcher_active{
+    background-color: #006eff;
+    justify-content: flex-end;
+}
+
+.checkbo_label{
+    display: flex;
+    gap: 15px;
 }
 
 .Piano_keys{
 width: 100%;
 height: 300px;
-margin-top: 100px;
 padding: 30px 40px;
-background-color: #333;
+background-color: #181818;
 display: flex;
 justify-content: space-between;
 border-radius: 15px;
@@ -37,13 +77,16 @@ border-radius: 15px;
 
 .key span{
     position:absolute;
-    
-
+    font-weight: 600;
 }
 
 .key{
     position: relative;
-    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    user-select: none;
 
 }
 
@@ -53,17 +96,37 @@ border-radius: 15px;
     flex-grow: 1;
     border-bottom: 8px solid #ddd;
     border-radius: 5px;
-    margin-left: -20px;
+    margin-left: -17px;
     z-index: 1
     ;
     
 }
 
 .black{
-    background-color: black;
-    border: 2px solid black;
+    background:linear-gradient(black, #333);
+    border-radius:  0 0 5px 5px;
+    border-bottom: 8px solid #222;
     width: 40px;
-    height: 130px;
+    height: 150px;
     margin-left: -20px;
-    z-index: 2;        
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.3);       
+}
+
+.Piano_keys.white:nth-child(1) {
+    margin-left: 0;
+
+}
+
+.Piano_keys.white:nth-child(5) {
+    margin-right: 20px;
+
+}
+.Piano_keys.white:nth-child(12) {
+    margin-right: 20px;
+
+}
+.Piano_keys.white:nth-child(17) {
+    margin-right: 20px;
+
 }
