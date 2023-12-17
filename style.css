@@ -94,11 +94,11 @@ border-radius: 15px;
     background-color:white;
     border: 2px solid black;
     flex-grow: 1;
-    border-bottom: 8px solid #ddd;
+    border-bottom: 8px solid #b4b4b4;
     border-radius: 5px;
-    margin-left: -17px;
-    z-index: 1
-    ;
+    margin-left: -20px;
+    z-index: 1;
+    justify-content: space-between;
     
 }
 
@@ -120,6 +120,7 @@ border-radius: 15px;
 
 .Piano_keys.white:nth-child(5) {
     margin-right: 20px;
+    
 
 }
 .Piano_keys.white:nth-child(12) {
@@ -129,4 +130,10 @@ border-radius: 15px;
 .Piano_keys.white:nth-child(17) {
     margin-right: 20px;
 
+}
+
+.black--pressed {
+    background: linear-gradient(#222, black);
+    border-bottom: none;
+    height: 148px;
 }
