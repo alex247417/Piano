@@ -78,6 +78,7 @@ border-radius: 15px;
 .key span{
     position:absolute;
     font-weight: 600;
+    transition-duration: 300ms;
 }
 
 .key{
@@ -131,9 +132,14 @@ border-radius: 15px;
     margin-right: 20px;
 
 }
-
+/*Passar  a impressão de tecla preta pressionada.*/
 .black--pressed {
     background: linear-gradient(#222, black);
     border-bottom: none;
     height: 148px;
 }
+
+.disabled-keys span{
+    opacity: 0;
+}
+
